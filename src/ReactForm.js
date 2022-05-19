@@ -3,7 +3,7 @@ import './App.css';
 
 function ReactForm() {
 	return (
-		<div className='App'>
+		<section className='App'>
 			<h1>Hi, I'm YourName This is my online form</h1>
 			{/* Scenario: Let's think you have to fill a form
       the first time you are signing up to a College */}
@@ -97,11 +97,11 @@ function ReactForm() {
 					/>
 				</label>
 				<br />
-				<button type='submit' disabled='false'>
+				<button type='submit' disabled={false}>
 					Submit
 				</button>
 			</form>
-		</div>
+		</section>
 	);
 }
 
