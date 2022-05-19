@@ -33,7 +33,7 @@ Note: In our lesson yesterday we try to went every value inside the attribute <s
 
 1. What is an Event in JavaScript?
 
-   An <strong>event</strong> is an action that a person does when he or she visits a site.
+   An <strong>[event](https://www.w3schools.com/tags/ref_eventattributes.asp)</strong> is an action that a person does when he or she visits a site.
 
 2. What are the most common events in JavaScript?
 
