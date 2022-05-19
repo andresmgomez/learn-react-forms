@@ -10,7 +10,12 @@ function ReactForm() {
 			<form method='post' className='App-header'>
 				<label htmlFor='firstName'>
 					First Name:
-					<input type='text' name='firstName' placeholder='Your First name' />
+					<input
+						onChange={event => console.log(event)}
+						type='text'
+						name='firstName'
+						placeholder='Your First name'
+					/>
 				</label>
 				<br />
 				<label htmlFor='lastName'>
