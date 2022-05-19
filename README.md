@@ -2,14 +2,13 @@
 
 ### React App
 
-#### `npm install`
+#### Install npm modules
+`npm install`
 
-install node modules
+#### Run the app
+`npm start`
 
-#### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000)
 
 ### Form
 
@@ -55,7 +54,7 @@ Note: If you put console.log after an annonymous function inside an
 
 1. What is the DOM?
 
-   The Document Object Model as it stands for, allow us to keep track of every html element inside of a page
+   The [Document Object Model](https://www.tutorialspoint.com/javascript/javascript_html_dom.htm) as it stands for, allow us to keep track of every html element inside of a page
 
 2. How to get the DOM of <input> fields?
 
