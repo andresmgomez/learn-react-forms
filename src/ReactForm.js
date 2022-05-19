@@ -11,7 +11,7 @@ function ReactForm() {
 				<label htmlFor='firstName'>
 					First Name:
 					<input
-						onChange={event => console.log(event)}
+						onChange={event => console.log(event.target)}
 						type='text'
 						name='firstName'
 						placeholder='Your First name'
@@ -20,12 +20,18 @@ function ReactForm() {
 				<br />
 				<label htmlFor='lastName'>
 					Last Name:
-					<input type='text' name='lastName' placeholder='Your Last name' />
+					<input
+						onChange={event => console.log(event.target)}
+						type='text'
+						name='lastName'
+						placeholder='Your Last name'
+					/>
 				</label>
 				<br />
 				<label htmlFor='address'>
 					Address:
 					<input
+						onChange={event => console.log(event.target)}
 						type='text'
 						name='address'
 						placeholder='What is your Address?'
@@ -35,6 +41,7 @@ function ReactForm() {
 				<label htmlFor='zipCode'>
 					Zip:
 					<input
+						onChange={event => console.log(event.target)}
 						type='number'
 						name='zipCode'
 						placeholder='What is your Zip code?'
@@ -43,7 +50,10 @@ function ReactForm() {
 				<br />
 				<label>
 					State:
-					<select name='nationState'>
+					<select
+						onChange={event => console.log(event.target)}
+						name='nationState'
+					>
 						<option selected='florida' value='florida'>
 							FL
 						</option>
@@ -55,13 +65,14 @@ function ReactForm() {
 				<br />
 				DOB:
 				<label htmlFor='birthDate'>
-					<input type='date' />
+					<input onChange={event => console.log(event.target)} type='date' />
 				</label>
 				<br />
 				<br />
 				<label htmlFor='message'>
 					Your Message <br />
 					<textarea
+						onChange={event => console.log(event.target)}
 						name='message'
 						id='message'
 						cols='40'
@@ -72,7 +83,11 @@ function ReactForm() {
 				<br />
 				<label>
 					Agree with the <strong>Terms and Conditions</strong>
-					<input type='checkbox' name='agree' />
+					<input
+						onChange={event => console.log(event.target)}
+						type='checkbox'
+						name='agree'
+					/>
 				</label>
 				<br />
 				<button type='submit' disabled='false'>

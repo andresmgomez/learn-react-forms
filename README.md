@@ -23,17 +23,30 @@ Note: In our lesson yesterday we try to went every value inside the attribute <s
 
 1. What is an Event in JavaScript?
 
-   An event is an action that a person does when he or she visits a site
+   An <strong>event</strong> is an action that a person does when he or she visits a site
 
 2. What are the most common events in JavaScript?
 
    [onClick](https://www.w3schools.com/jsref/event_onclick.asp) - Event that is used to go from one page to another
+
    Exercise: Try to click on the label of firstName or lastName and see what happens
 
    [onChange](https://www.w3schools.com/jsref/event_onchange.asp) - Event that keeps track when a value has been changed
+
    Exercise: Type any <em>letter</em> you can think of and check the console after opening the <strong>dev tools</strong> and see what happens
 
    [onSubmit](https://www.w3schools.com/jsref/event_onsubmit.asp) - Event that is used to send information inside the form to a web server
 
 Note: If you put console.log after an annonymous function inside an
 <strong>onChange</strong> prop, you will get a huge event object where <em>JavaScript</em> keeps of track of every interaction between the client and the web server.
+
+### A First Look at Events
+
+1. What is the DOM?
+
+   The Document Object Model as it stands for, allow us to keep track of every html element inside of a page
+
+2. How to get the DOM of <input> fields?
+   If we expand the <em>event</em> object, and click on <strong>target</strong>, we will get our selected field.
+
+   Exercise: Type any first letter you can think of inside firstName, lastName and any other field inside the form and see what happens
