@@ -11,7 +11,7 @@ function ReactForm() {
 				<label htmlFor='firstName'>
 					First Name:
 					<input
-						onChange={event => console.log(event.target)}
+						onChange={event => console.log('First name: ', event.target.value)}
 						type='text'
 						name='firstName'
 						placeholder='Your First name'
@@ -21,7 +21,7 @@ function ReactForm() {
 				<label htmlFor='lastName'>
 					Last Name:
 					<input
-						onChange={event => console.log(event.target)}
+						onChange={event => console.log('Last name: ', event.target.value)}
 						type='text'
 						name='lastName'
 						placeholder='Your Last name'
@@ -31,7 +31,7 @@ function ReactForm() {
 				<label htmlFor='address'>
 					Address:
 					<input
-						onChange={event => console.log(event.target)}
+						onChange={event => console.log('Address: ', event.target.value)}
 						type='text'
 						name='address'
 						placeholder='What is your Address?'
@@ -41,7 +41,7 @@ function ReactForm() {
 				<label htmlFor='zipCode'>
 					Zip:
 					<input
-						onChange={event => console.log(event.target)}
+						onChange={event => console.log('Zip Code: ', event.target.value)}
 						type='number'
 						name='zipCode'
 						placeholder='What is your Zip code?'
@@ -51,7 +51,7 @@ function ReactForm() {
 				<label>
 					State:
 					<select
-						onChange={event => console.log(event.target)}
+						onChange={event => console.log('US State: ', event.target.value)}
 						name='nationState'
 					>
 						<option selected='florida' value='florida'>
@@ -65,14 +65,19 @@ function ReactForm() {
 				<br />
 				DOB:
 				<label htmlFor='birthDate'>
-					<input onChange={event => console.log(event.target)} type='date' />
+					<input
+						onChange={event => console.log('DOB: ', event.target.value)}
+						type='date'
+					/>
 				</label>
 				<br />
 				<br />
 				<label htmlFor='message'>
 					Your Message <br />
 					<textarea
-						onChange={event => console.log(event.target)}
+						onChange={event =>
+							console.log('Your message: ', event.target.value)
+						}
 						name='message'
 						id='message'
 						cols='40'
@@ -84,7 +89,9 @@ function ReactForm() {
 				<label>
 					Agree with the <strong>Terms and Conditions</strong>
 					<input
-						onChange={event => console.log(event.target)}
+						onChange={event =>
+							console.log('Agree with terms: ', event.target.value)
+						}
 						type='checkbox'
 						name='agree'
 					/>

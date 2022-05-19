@@ -40,13 +40,22 @@ Note: In our lesson yesterday we try to went every value inside the attribute <s
 Note: If you put console.log after an annonymous function inside an
 <strong>onChange</strong> prop, you will get a huge event object where <em>JavaScript</em> keeps of track of every interaction between the client and the web server.
 
-### A First Look at Events
+### A Deeper Look at Events
 
 1. What is the DOM?
 
    The Document Object Model as it stands for, allow us to keep track of every html element inside of a page
 
 2. How to get the DOM of <input> fields?
+
    If we expand the <em>event</em> object, and click on <strong>target</strong>, we will get our selected field.
 
    Exercise: Type any first letter you can think of inside firstName, lastName and any other field inside the form and see what happens
+
+3. What is a value?
+   A value is the piece of information (actual text, number, or any other type) that is stored inside an element.
+
+4. How to get the value of an <input> field?
+   After we expand the <em>event</em> object, and click on <em>target</em>. We can select the value by toggling the <strong>value</strong>
+
+   Exercise: Type any info you can think of inside each input field, and see what happens
