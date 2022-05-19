@@ -3,12 +3,15 @@
 ### Form
 
 1. What is a Form?
+
    A [form](https://www.tutorialspoint.com/html/html_forms.htm) is a special html tag that lets you grab information
 
 2. What is an <input> tag
+
    This is a tag inside a form that lets you react toward what the person wrote and how to handle this data
 
 3. What is an attribute in an <input> element?
+
    A piece of text that looks like a <strong>prop</strong> that lets you change
    the <em>behavior</em> how an input tag shows in
 
@@ -19,6 +22,7 @@ Note: In our lesson yesterday we try to went every value inside the attribute <s
 ### Events
 
 1. What is an Event in JavaScript?
+
    An event is an action that a person does when he or she visits a site
 
 2. What are the most common events in JavaScript?
